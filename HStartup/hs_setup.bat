@@ -59,7 +59,7 @@ timeout /t 1 /nobreak >nul
 copy /y "%src%\HS-Troubleshooter.vbs" "%dst%\HS-Troubleshooter.vbs" >nul
 
 echo [3/3] Scheduling task...
-schtasks /create /tn "HStartupTask" /tr "wscript.exe \"%cd%\%dst%\logic.vbs\"" /sc onlogon /it /f /delay 0000:03 >nul
+schtasks /create /tn "HStartupTask" /tr "wscript.exe \"%cd%\%dst%\logic.vbs\"" /sc onlogon /it /f >nul
 
 if %errorLevel% neq 0 (
     start "" wscript.exe "%src%\HS-Troubleshooter.vbs" "crit" "Failed to schedule the task. Check for Antivirus interference."
