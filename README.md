@@ -22,7 +22,7 @@ HStartup is a free tool where you can customize your OS Startup sound, to give a
 
 ##### Custom Audio Specifications:
 
-1. The custom audio file MUST be named YourStartup. (if you are lazy to drop in your audio, dont worry, HStartup comes with a sample, and you dont have to erase it since HStartup prioritizes the custom audio over the sample)
+1. The custom audio file MUST be named HSsound. (if you are lazy to drop in your audio, dont worry, HStartup comes with a sample, and you dont have to erase it since HStartup prioritizes the custom audio over the sample)
 2. The custom audio file MUST have a .wav extension.
 3. The custom audio file MUST be encoded as a 16-Bit PCM. Windows Media Object act weird with 24 bit or 32 bit PCM Encoded audios.
 
