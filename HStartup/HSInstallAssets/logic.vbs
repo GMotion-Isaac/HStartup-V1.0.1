@@ -1,13 +1,12 @@
-Dim oPlayer, fso, strPath
+Set sh = CreateObject("WScript.Shell")
+Set fs = CreateObject("Scripting.FileSystemObject")
 
-Set fso = CreateObject("Scripting.FileSystemObject")
-strPath = fso.GetParentFolderName(WScript.ScriptFullName)
+base = fs.GetParentFolderName(WScript.ScriptFullName)
+audio = fs.BuildPath(base, "HSsound.wav")
 
-Set oPlayer = CreateObject("WMPlayer.OCX")
-oPlayer.URL = strPath & "\sound.wav"
-
-oPlayer.controls.play
-
-Do Until oPlayer.playState = 1
-    WScript.Sleep 100
-Loop
+If fs.FileExists(audio) Then
+    sh.Run "powershell -NoProfile -ExecutionPolicy Bypass -c ""(New-Object Media.SoundPlayer '" & audio & "').PlaySync()""", 0, True
+Else
+    sh.Run "wscript.exe """ & base & "\HS-Troubleshooter.vbs"" ""crit"" ""HSsound.wav is missing from HStartupAssets.""", 0, True
+    WScript.Quit 1
+End If
