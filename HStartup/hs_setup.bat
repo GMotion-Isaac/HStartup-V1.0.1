@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-title HStartup Installer
+title HStartup Setup
 
 net session >nul 2>&1
 if %errorLevel% neq 0 (
