@@ -93,7 +93,7 @@ exit
 cls
 echo.
 echo An error ocurred.
-echo Please heck the popup window for details.
+echo Please check the popup window for details.
 echo.
 pause
 popd
