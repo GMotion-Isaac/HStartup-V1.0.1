@@ -23,12 +23,12 @@ HStartup is a free tool where you can customize your OS Startup sound, to give a
 ##### Custom Audio Specifications:
 
 1. The custom audio file MUST be named HSsound. (if you are lazy to drop in your audio, dont worry, HStartup comes with a sample, and you dont have to erase it since HStartup prioritizes the custom audio over the sample)
-2. The custom audio file MUST have a .wav extension.
+2. The custom audio file MUST be a .wav file.
 3. The custom audio file MUST be encoded as a 16-Bit PCM. Windows Media Object act weird with 24 bit or 32 bit PCM Encoded audios.
 
 ##### Troubleshooting:
 
-(**Disclaimer**: This only covers known errors. If you find any error outside of this list, report the bug in the Github Repository for HStartup)
+(**Disclaimer**: This only covers known errors. If you find any error outside of this list, make a new issue in the Github Repository for HStartup)
 
 1. ###### Sound doesnt play, what do i do?
 
@@ -37,15 +37,15 @@ HStartup is a free tool where you can customize your OS Startup sound, to give a
    * If you are in a laptop, the task scheduler may have scheduled the task to only start on **AC Power**. While the installer uses **PowerShell** to automatically turn off **"Start the task only if the computer is on AC Power"**, some builds of Windows 10 and higher may override it, and ypu can manually fix this by pressing **Win R**, type **taskschd.msc** and run it, then find the task named **HStartupTask** in the library, click it and go to Properties, then Conditions, and uncheck **"Start the task only if the computer is on AC Power"**
 2. ###### Setup shows "Access Denied"!
 
-   * You must accept the UAC prompt for it to work to tell Task Scheduler to Schedule a new task. If the UAC prompt didnt pop up, right click HS-Setup and click **Run as Administrator**.
+   * You must accept the **UAC prompt** for it to work to tell Task Scheduler to Schedule a new task. If the UAC prompt didnt pop up, right click HS-Setup and click **Run as Administrator**.
    * Some aggressive **Antivirus Software** may block the creation of .vbs files and/or task scheduling. Check your **Antivirus's Quarantine** or **Blocked Actions** tab.
 3. ###### Setup says "Files Missing"!
 
-   * You may have erased the HSInstallAssets folder or an asset in it. Check your recycle bin for any missing assets. If this doesnt work, please download HStartup again.
+   * You may have **erased** the HSInstallAssets folder or an asset in it. Check your recycle bin for any missing assets. If this doesnt work, please download HStartup again.
 
 ##### Q\&A
 
-###### Q: Why does the setup require Administrator privileges?
+###### Q: Why does the setup require **Administrator privileges**?
 
 &#x20;A: HStartup needs to "talk" with the Windows Task Scheduler to Schedule a task so your custom sound always plays.
 
