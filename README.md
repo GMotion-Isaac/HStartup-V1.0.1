@@ -75,15 +75,15 @@ HStartup is a free tool where you can customize your OS Startup sound, to give a
 
 ###### Q: Is HStartup safe to run?
 
-&x20; A: Yes, HStartup is complete open source. You can check the code right here to see how HStartup works. If you download this from this repo, it is completely safe.
+&#x20; A: Yes, HStartup is complete open source. You can check the code right here to see how HStartup works. If you download this from this repo, it is completely safe.
 
 ###### Q: How do i run it anyway if i see the warning?
 
-&x20; A: Click the More Info button and select Run anyway.
+&#x20; A: Click the More Info button and select Run anyway.
 
 ###### Q: Why dont you just... sign the app?
 
-&x20; A: Digital certificates cost hundreds of dollars every year. For a free, indie nonprofit project like this, the price is currently too high. Keeping the project open source lets the community verify the safety of the code instead.
+&#x20; A: Digital certificates cost hundreds of dollars every year. For a free, indie nonprofit project like this, the price is currently too high. Keeping the project open source lets the community verify the safety of the code instead.
 
 #### Credits n' Stuff:
 
