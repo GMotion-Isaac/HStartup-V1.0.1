@@ -69,6 +69,22 @@ HStartup is a free tool where you can customize your OS Startup sound, to give a
 
 &#x20;A: On laptops, Windows tasks are blocked from running on battery power by default. The installer uses PowerShell to bypass this restriction so your sound works even if your laptop is not plugged in.
 
+###### Q: Why does Windows say this file is unverified and a risk?
+
+&#x20; A: You will see this warning since the files are not digitally signed. As an indie software creator, i dont have a paid developer certificate from a certificate authority. It is completely normal for Windows SmartScreen to flag this software, as it is unsigned. Add it to a whitelist so you dont get a warning that this is unverified everytime you startup.
+
+###### Q: Is HStartup safe to run?
+
+&x20; A: Yes, HStartup is complete open source. You can check the code right here to see how HStartup works. If you download this from this repo, it is completely safe.
+
+###### Q: How do i run it anyway if i see the warning?
+
+&x20; A: Click the More Info button and select Run anyway.
+
+###### Q: Why dont you just... sign the app?
+
+&x20; A: Digital certificates cost hundreds of dollars every year. For a free, indie nonprofit project like this, the price is currently too high. Keeping the project open source lets the community verify the safety of the code instead.
+
 #### Credits n' Stuff:
 
 &#x20; HHHHH  HHHHH   SSSSSSSSS
