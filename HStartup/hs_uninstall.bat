@@ -1,5 +1,9 @@
 @echo off
-title HStartup Task Remover
+title HStartup Uninstallation Program
+
+echo HStartup Uninstallation Program requires administrator privileges to run correctly!
+echo Please accept the UAC prompt!
+echo Wait a few seconds, we're trying to request administrator priviliges.
 
 net session >nul 2>&1
 if %errorLevel% neq 0 (
@@ -7,11 +11,17 @@ if %errorLevel% neq 0 (
     exit /b
 )
 
-echo ===========================================
-echo =                                         =
-echo =         HStartup Task Remover           =
-echo =                                         =
-echo ===========================================
+echo.
+echo   HHHHH  HHHHH   SSSSSSSSS
+echo   HHHHH  HHHHH  SSSSSSSSSS
+echo   HHHHHHHHHHHH  SSSS
+echo   HHHHHHHHHHHH   SSSSSSSSS
+echo   HHHHH  HHHHH        SSSS
+echo   HHHHH  HHHHH  SSSSSSSSSS
+echo   HHHHH  HHHHH   SSSSSSSSS
+echo FREE STARTUP SOUND CUSTOMIZER
+echo -------------------------------
+echo HStartup Uninstallation Program
 echo.
 echo This will remove the task for HStartup
 echo You can setup HStartup again at any moment you'd like.
