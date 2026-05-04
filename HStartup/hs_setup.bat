@@ -41,8 +41,8 @@ if not exist "%src%\logic.vbs" (
     start "" wscript.exe "%src%\HS-Troubleshooter.vbs" "crit" "Download failed: logic.vbs is missing from the source folder."
     goto :error
 )
-if not exist "%src%\sound.wav" (
-    start "" wscript.exe "%src%\HS-Troubleshooter.vbs" "crit" "Download failed: sound.wav is missing from the source folder."
+if not exist "%src%\HSsound.wav" (
+    start "" wscript.exe "%src%\HS-Troubleshooter.vbs" "crit" "Download failed: HSsound.wav is missing from the source folder."
     goto :error
 )
 
@@ -52,8 +52,8 @@ echo [1/3] Downloading logic.vbs...
 copy /y "%src%\logic.vbs" "%dst%\logic.vbs" >nul
 timeout /t 1 /nobreak >nul
 
-echo [2/3] Downloading sound.wav...
-copy /y "%src%\sound.wav" "%dst%\sound.wav" >nul
+echo [2/3] Downloading HSsound.wav...
+copy /y "%src%\HSsound.wav" "%dst%\HSsound.wav" >nul
 timeout /t 1 /nobreak >nul
 
 copy /y "%src%\HS-Troubleshooter.vbs" "%dst%\HS-Troubleshooter.vbs" >nul
