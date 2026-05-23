@@ -1,4 +1,4 @@
-# **HStartup**: Free Custom Startup Sounds V1.0.0
+# **HStartup**: Free Custom Startup Sounds V1.0.1
 
 ## (By **G.M Isaac**)
 
